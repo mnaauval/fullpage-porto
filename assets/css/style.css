@@ -348,3 +348,7 @@ textarea.form-control {
   height: 110px;
   padding-top: 10px;
 }
+#liveToast {
+  margin-bottom: 20px;
+  margin: auto;
+}

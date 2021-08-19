@@ -22,6 +22,12 @@
   }
 }
 @media (max-width: 991px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+  body {
+    padding-top: 100px;
+  }
   #header {
     background-color: rgba(250, 250, 250, 0.9) !important;
     padding: 10px 20px;

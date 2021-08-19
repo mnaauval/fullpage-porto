@@ -127,3 +127,23 @@ if (toastTrigger2) {
     toast.show();
   });
 }
+
+// Input to form
+const scriptURL = "https://script.google.com/macros/s/AKfycbzI2QqFpaUR6gBm2JulpHRjF5viX10BcUoOGdOO3_Gwnq3RGW-2IqOnvtlqH81Kygoi/exec";
+const form = document.forms["submit-to-google-sheet"];
+const btnSend = document.querySelector(".btn-send");
+const btnLoading = document.querySelector(".btn-loading");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  btnSend.classList.toggle("d-none");
+  btnLoading.classList.toggle("d-none");
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      console.log("Success!", response);
+      btnSend.classList.toggle("d-none");
+      btnLoading.classList.toggle("d-none");
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});

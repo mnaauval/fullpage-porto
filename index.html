@@ -260,9 +260,9 @@
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <form class="contact-input">
+                        <form name="submit-to-google-sheet" class="contact-input">
                           <div class="mb-3">
-                            <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Name" required />
+                            <input type="text" class="form-control" id="name" aria-describedby="name" name="name" placeholder="Name" required />
                           </div>
                           <div class="mb-3">
                             <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Email" required />
@@ -270,7 +270,7 @@
                           <div class="mb-3">
                             <textarea class="form-control" id="message" rows="3" name="message" placeholder="Message" spellcheck="true" required></textarea>
                           </div>
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-primary btn-send">Submit</button>
                           <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Loading...
