@@ -11,12 +11,6 @@
   h2 {
     font-size: 30px;
   }
-  .inner-section span {
-    font-size: 18px;
-  }
-  .welcome-title {
-    font-size: 60px;
-  }
   .welcome-section p {
     font-size: 17px;
   }
@@ -33,6 +27,22 @@
   }
   .navbar-nav .nav-item .nav-link::after {
     background: var(--col-bg);
+  }
+  .welcome-hello {
+    font-size: 26px;
+  }
+  .welcome-title {
+    font-size: 60px;
+  }
+  .about-content {
+    padding: 0 0;
+  }
+  .service-list {
+    height: 100%;
+    padding: 50px 20px;
+  }
+  #liveToast {
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1600px) {
