@@ -221,6 +221,7 @@ video {
   overflow: hidden;
   position: relative;
   border-radius: 10px;
+  /* height: 400px; */
 }
 .gallery-item .thumb-inner {
   position: absolute;
@@ -263,7 +264,7 @@ video {
 .contact-box {
   background-color: rgba(250, 250, 250, 0.2);
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 30px;
   border-radius: 10px;
   font-weight: 700;
@@ -326,4 +327,9 @@ textarea.form-control {
 }
 .btn:focus {
   box-shadow: none;
+}
+.toast {
+  border-radius: 10px;
+  background: white;
+  color: var(--col-acent);
 }

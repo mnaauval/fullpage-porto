@@ -25,6 +25,24 @@ $(document).ready(function () {
     nav: false,
     dots: true,
     autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 0,
+      },
+      460: {
+        items: 1,
+        margin: 0,
+      },
+      576: {
+        items: 2,
+        margin: 20,
+      },
+      992: {
+        items: 3,
+        margin: 30,
+      },
+    },
   });
 });
 $(document).ready(function () {
@@ -32,6 +50,24 @@ $(document).ready(function () {
     // loop: true,
     margin: 20,
     // nav: true,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 0,
+      },
+      460: {
+        items: 1,
+        margin: 0,
+      },
+      576: {
+        items: 2,
+        margin: 20,
+      },
+      992: {
+        items: 3,
+        margin: 30,
+      },
+    },
   });
 });
 $(document).ready(function () {
@@ -42,6 +78,24 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     autoplayTimeout: 4000,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 0,
+      },
+      460: {
+        items: 1,
+        margin: 0,
+      },
+      576: {
+        items: 2,
+        margin: 20,
+      },
+      992: {
+        items: 3,
+        margin: 30,
+      },
+    },
   });
 });
 
@@ -52,4 +106,24 @@ function copyToClipboard(element) {
   $temp.val($(element).text()).select();
   document.execCommand("copy");
   $temp.remove();
+}
+
+// Toast
+var toastTrigger = document.getElementById("mobile");
+var toastTrigger2 = document.getElementById("mail");
+var toastLiveExample = document.getElementById("liveToast");
+
+if (toastTrigger) {
+  toastTrigger.addEventListener("click", function () {
+    var toast = new bootstrap.Toast(toastLiveExample);
+
+    toast.show();
+  });
+}
+if (toastTrigger2) {
+  toastTrigger2.addEventListener("click", function () {
+    var toast = new bootstrap.Toast(toastLiveExample);
+
+    toast.show();
+  });
 }

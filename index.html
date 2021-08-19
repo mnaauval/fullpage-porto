@@ -55,7 +55,7 @@
             <div class="welcome-section">
               <span class="welcome-hello">Hi, Welcome to</span>
               <h1 class="welcome-title">Hello</h1>
-              <p>Hello is one of my portfolio website. Built with Bootstrap5. Inspired by ELEGANCE by Templatemo. Credits go to <strong>Unsplash</strong> and <strong>Pexels</strong> for photos and video used in this page. THANK YOU</p>
+              <p>This is one of my portfolio website. Built with Bootstrap5. Inspired by ELEGANCE by Templatemo. Credits go to <strong>Unsplash</strong> and <strong>Pexels</strong> for photos and video used in this page. THANK YOU</p>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="margin-top: 0">
                       <figure>
                         <img src="assets/image/zhangzui-9DvLeN7rbbI-unsplash.jpg" alt="My Photo" class="rounded about-img" />
                         <figcaption>
@@ -187,7 +187,7 @@
                   <div class="gallery-list owl-carousel">
                     <div class="item">
                       <div class="gallery-item">
-                        <div class="thumb"><img src="assets/image/item-1.jpg" alt="" /></div>
+                        <div class="thumb"><img src="assets/image/2021-08-19-07-09-porto-bs5.vercel.app.png" alt="" /></div>
                         <div class="thumb-inner">
                           <h4>Compro Addtitle</h4>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit praesentium architecto dolor adipisci fuga!</p>
@@ -196,7 +196,7 @@
                     </div>
                     <div class="item">
                       <div class="gallery-item">
-                        <div class="thumb"><img src="assets/image/item-1.jpg" alt="" /></div>
+                        <div class="thumb"><img src="assets/image/Ninja-Ken-Game.png" alt="" /></div>
                         <div class="thumb-inner">
                           <h4>Portfolio</h4>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit praesentium architecto dolor adipisci fuga!</p>
@@ -205,7 +205,7 @@
                     </div>
                     <div class="item">
                       <div class="gallery-item">
-                        <div class="thumb"><img src="assets/image/item-1.jpg" alt="" /></div>
+                        <div class="thumb"><img src="assets/image/Addtitle-Dev-Web-Development.png" alt="" /></div>
                         <div class="thumb-inner">
                           <h4>ABC</h4>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit praesentium architecto dolor adipisci fuga!</p>
@@ -213,8 +213,8 @@
                       </div>
                     </div>
                     <div class="item">
-                      <div class="gallery-item">
-                        <div class="thumb"><img src="assets/image/item-1.jpg" alt="" /></div>
+                      <div class="gallery-item" style="height: 400px">
+                        <div class="thumb"><img src="assets/image/1.jpg" alt="" /></div>
                         <div class="thumb-inner">
                           <h4>HGF</h4>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reprehenderit praesentium architecto dolor adipisci fuga!</p>
@@ -243,8 +243,14 @@
                         <p id="p2" class="d-none">mnaauval20@gmail.com</p>
                         <div class="contact-item">
                           <div class="contact-box"><i class="fa fa-map-marker"></i> Nganjuk, East Java</div>
-                          <div onclick="copyToClipboard('#p1')" class="contact-box"><i class="fas fa-mobile-alt"></i> 085708311593</div>
-                          <div onclick="copyToClipboard('#p2')" class="contact-box"><i class="fas fa-paper-plane"></i> mnaauval20@gmail.com</div>
+                          <div id="mobile" onclick="copyToClipboard('#p1')" class="contact-box"><i class="fas fa-mobile-alt"></i> 085708311593</div>
+                          <div id="mail" onclick="copyToClipboard('#p2')" class="contact-box"><i class="fas fa-paper-plane"></i> mnaauval20@gmail.com</div>
+                        </div>
+                        <div id="liveToast" class="toast align-items-center border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="d-flex">
+                            <div class="toast-body">Text copied to clipboard</div>
+                            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
                         </div>
                       </div>
                       <div class="col-md-6">
