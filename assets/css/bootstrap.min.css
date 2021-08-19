@@ -4907,7 +4907,7 @@ fieldset:disabled .btn {
   opacity: 0;
 }
 .toast.hide {
-  display: none;
+  visibility: hidden;
 }
 .toast-container {
   width: -webkit-max-content;
