@@ -6,18 +6,14 @@
   --grad-green: #39ced6;
   --font-raleway: "Raleway", Arial, Helvetica, sans-serif;
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   h1,
   h2 {
     font-size: 30px;
   }
-  .welcome-section p {
-    font-size: 17px;
-  }
-}
-@media (max-width: 992px) {
   #header {
     background-color: rgba(250, 250, 250, 0.9) !important;
+    padding: 10px 20px;
   }
   #logo {
     color: var(--col-acent);
@@ -28,12 +24,8 @@
   .navbar-nav .nav-item .nav-link::after {
     background: var(--col-bg);
   }
-  .welcome-hello {
-    font-size: 26px;
-  }
-  .welcome-title {
-    font-size: 60px;
-  }
+}
+@media (max-width: 767px) {
   .about-content {
     padding: 0 0;
   }
@@ -41,11 +33,25 @@
     height: 100%;
     padding: 50px 20px;
   }
+}
+@media (max-width: 991px) {
+  .welcome-hello {
+    font-size: 26px;
+  }
+  .welcome-title {
+    font-size: 60px;
+  }
+  .welcome-section p {
+    font-size: 17px;
+  }
   .item h3 {
     font-size: 24px;
   }
   #liveToast {
     margin-bottom: 20px;
+  }
+  .contact-box {
+    width: 100%;
   }
 }
 @media (min-width: 1600px) {
