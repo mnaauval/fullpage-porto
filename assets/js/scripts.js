@@ -9,12 +9,31 @@ new fullpage("#fullpage", {
   lazyLoading: true,
 });
 
-// active section
-var activeNavItem = $(".nav-item");
+// on click active section
+// var activeNavItem = $(".nav-item");
 
-activeNavItem.click(function () {
-  activeNavItem.removeClass("active");
-  $(this).addClass("active");
+// activeNavItem.click(function () {
+//   activeNavItem.removeClass("active");
+//   $(this).addClass("active");
+// });
+
+// One Page Nav jquery
+$("#myNav").onePageNav({
+  currentClass: "current",
+  changeHash: false,
+  scrollSpeed: 750,
+  scrollThreshold: 0.5,
+  filter: "",
+  easing: "swing",
+  begin: function () {
+    //I get fired when the animation is starting
+  },
+  end: function () {
+    //I get fired when the animation is ending
+  },
+  scrollChange: function ($currentListItem) {
+    //I get fired when you enter a section and I pass the list item of the section
+  },
 });
 
 // owl-carousel

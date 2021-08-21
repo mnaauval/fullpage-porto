@@ -117,7 +117,10 @@ video {
   left: 0;
 }
 .inner-section {
-  padding: 20px 30px 0; /* top left-right bottom */
+  /* padding: 20px 30px 0;  */
+  /* top left-right bottom */
+
+  padding: 20px 30px;
 }
 #fullpage {
   z-index: 99;
