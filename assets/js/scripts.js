@@ -1,3 +1,10 @@
+// Preloader
+$(document).ready(function () {
+  $(window).on("load", function () {
+    $("#preloader").fadeOut();
+  });
+});
+
 // FullPage
 new fullpage("#fullpage", {
   anchors: ["page1", "page2", "page3", "page4", "page5"],
@@ -99,7 +106,7 @@ $(document).ready(function () {
   });
 });
 
-//  copytoclipboard
+//  Copy to clipboard
 function copyToClipboard(element) {
   var $temp = $("<input>");
   $("body").append($temp);

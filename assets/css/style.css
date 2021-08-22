@@ -125,11 +125,21 @@ video {
 #fullpage {
   z-index: 99;
 }
-.navbar-dark .navbar-toggler {
-  color: var(--col-bg) !important;
+#preloader {
+  z-index: 9999;
+  position: fixed;
+  background: -webkit-linear-gradient(top, var(--grad-blue) 0%, var(--grad-green) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, var(--grad-blue) 0%, var(--grad-green) 100%); /* W3C, IE10+, FF16+, Chrome26+ */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-.nav-toggle i {
-  font-size: 30px;
+.preloader-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ============= NAVIGATION CSS ============= */
@@ -182,6 +192,13 @@ video {
 .navbar-nav .nav-item.active .nav-link {
   opacity: 1;
 }
+.navbar-dark .navbar-toggler {
+  color: var(--col-bg) !important;
+}
+.nav-toggle i {
+  font-size: 30px;
+}
+
 /* ============= MAIN CSS ============= */
 .welcome-section {
   font-size: 20px;
