@@ -5,6 +5,9 @@ $(document).ready(function () {
   });
 });
 
+// AOS
+AOS.init();
+
 // FullPage
 new fullpage("#fullpage", {
   anchors: ["page1", "page2", "page3", "page4", "page5"],
