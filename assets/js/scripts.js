@@ -5,14 +5,6 @@ $(document).ready(function () {
   });
 });
 
-// AOS
-
-$(function () {
-  AOS.init({
-    duration: 1000,
-  });
-});
-
 // FullPage
 new fullpage("#fullpage", {
   anchors: ["page1", "page2", "page3", "page4", "page5"],
